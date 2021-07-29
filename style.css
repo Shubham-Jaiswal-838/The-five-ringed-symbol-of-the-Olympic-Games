@@ -1,0 +1,121 @@
+body {
+  background-color: black;
+
+}
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color:white;
+ text-shadow: 2px 2px rgb(218, 51, 154);
+}
+#rings-container {
+  position: relative;
+  margin: 70px auto;
+  width: 205px;
+  transform: scale(2.3);
+
+}
+#rings-container div,
+#rings-container div:before {
+  position: absolute;
+  width: 3.2em;
+  height: 3.2em;
+  border-width: 0.4em;
+  border-style: solid;
+  -moz-border-radius: 3.2em;
+  -webkit-border-radius: 3.2em;
+  border-radius: 3.2em;
+}
+.ring-1 {
+  top: 0;
+  left: 0;
+  z-index: 5;
+  border-color: #0079c3;
+  box-shadow: #0079c3 0px 0px 8px;
+  -moz-box-shadow: #0079c3 0px 0px 8px;
+    -webkit-box-shadow: #0079c3 0px 0px 8px;
+}
+.ring-2 {
+  top: 1.6em;
+  left: 2.2em;
+  z-index: 10;
+  border-color: #f5b629;
+  box-shadow: #f5b629 0px 0px 8px;
+  -moz-box-shadow: #f5b629 0px 0px 8px;
+    -webkit-box-shadow: #f5b629 0px 0px 8px;
+}
+.ring-2:before {
+  content: " ";
+  top: -2em;
+  left: -2.6em;
+  z-index: 16;
+  border-color: transparent #0079c3 transparent transparent;
+ 
+}
+.ring-3 {
+  top: 0;
+  left: 4.4em;
+  z-index: 15;
+  border-color: #05080e;
+  box-shadow: #fdfdfd 0px 0px 8px;
+  -moz-box-shadow: #fdfdfd 0px 0px 8px;
+    -webkit-box-shadow: #fdfdfd 0px 0px 8px;
+  
+}
+.ring-3:before {
+  content: " ";
+  top: 1.2em;
+  left: -2.6em;
+  z-index: 21;
+  border-color: #f5b629 transparent transparent transparent;
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+ 
+}
+.ring-4 {
+  top: 1.6em;
+  left: 6.6em;
+  z-index: 20;
+  border-color: #009945;
+  box-shadow: #009945 0px 0px 8px;
+  -moz-box-shadow: #009945 0px 0px 8px;
+    -webkit-box-shadow: #009945 0px 0px 8px;
+}
+.ring-4:before {
+  content: " ";
+  top: -2em;
+  left: -2.6em;
+  z-index: 26;
+  border-color:  transparent #05080e transparent transparent;
+  
+
+}
+.ring-5 {
+  top: 0;
+  left: 8.8em;
+  z-index: 25;
+  border-color: #e71f4a;
+  box-shadow: #e71f4a 0px 0px 8px;
+  -moz-box-shadow: #e71f4a 0px 0px 8px;
+    -webkit-box-shadow: #e71f4a 0px 0px 8px;
+}
+.ring-5:before {
+  content: " ";
+  top: 1.2em;
+  left: -2.6em;
+  z-index: 31;
+  border-color: #009945 transparent transparent transparent;
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+
+} 
+@media(max-width:500px){
+  #rings-container {
+     transform: scale(1.4);
+  }
+
+}
